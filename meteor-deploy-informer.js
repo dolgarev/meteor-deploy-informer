@@ -29,13 +29,15 @@ if (deployInfo.length > 0) {
     short,
     long,
     branch,
-    tag
+    tag,
+    ts
   } = parseJsonStringOrNull(deployInfo) || {}
 
   __meteor_runtime_config__[TRANSFER_PROP] = {
     short,
     long,
     branch,
-    tag
+    tag,
+    ts
   }
 }
